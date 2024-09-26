@@ -1,5 +1,5 @@
 import nbtlib
-from nbtlib import *
+from nbtlib import Byte,Compound,Int,Short,File, List,ByteArray
 import gzip
 import os
 import io
@@ -23,11 +23,11 @@ file = open(Worlds[0], 'rb').read()
 
 print('Decoding level...')
 
-Classic_file = gzip.decompress(file)[20630:4214934]
+classic_file = gzip.decompress(file)[20630:4214934]
 
 Blocks = []
 
-for byte in Classic_file:
+for byte in classic_file:
     Blocks.append(Byte(byte))
 
 #Make *.mclevel

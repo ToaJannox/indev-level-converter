@@ -1,8 +1,6 @@
-import nbtlib
 from nbtlib import Byte,Compound,Int,Short,File, List,ByteArray
 import gzip
 import os
-import io
 
 #Find world 
 

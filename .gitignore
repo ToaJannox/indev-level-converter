@@ -162,4 +162,5 @@ cython_debug/
 # Minecraft related files
 *.mclevel
 *.mine
-test_data/
+*.dat
+
